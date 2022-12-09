@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Inscription" prefHeight="520.0" prefWidth="946.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InscriptionController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="520.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/NEGOSUD.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="558.0" layoutY="44.0" prefHeight="432.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 50px;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="122.0" layoutY="28.0" prefHeight="30.0" prefWidth="104.0" text="Inscription" textAlignment="CENTER" textFill="#af0e1e">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="65.0" prefHeight="21.0" prefWidth="104.0" text="Nom">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NomInscription" alignment="TOP_LEFT" layoutX="31.0" layoutY="90.0" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: FDCF76; -fx-background-radius: 25px;" />
+            <Label layoutX="33.0" layoutY="120.0" prefHeight="21.0" prefWidth="104.0" text="Prenom">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="PrenomInscription" alignment="TOP_LEFT" layoutX="31.0" layoutY="145.0" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: FDCF76; -fx-background-radius: 25px;" />
+            <Label layoutX="33.0" layoutY="178.0" prefHeight="21.0" prefWidth="104.0" text="Adresse mail">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="MailInscription" alignment="TOP_LEFT" layoutX="31.0" layoutY="203.0" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: FDCF76; -fx-background-radius: 25px;" />
+            <TextField fx:id="MdpInscription" alignment="TOP_LEFT" layoutX="31.0" layoutY="260.0" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: FDCF76; -fx-background-radius: 25px;" />
+            <Label layoutX="33.0" layoutY="235.0" prefHeight="21.0" prefWidth="104.0" text="Mot de passe">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnInscription" layoutX="217.0" layoutY="303.0" mnemonicParsing="false" onAction="#Sinscire" prefHeight="27.0" prefWidth="95.0" styleClass="pink-btn" stylesheets="@../application/application.css" text="Confirmer">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="TOP_RIGHT" layoutX="47.0" layoutY="380.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: transparent;" stylesheets="@../application/application.css" text="Vous êtes déjà inscrit ?">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSeConnecter" layoutX="217.0" layoutY="378.0" mnemonicParsing="false" onAction="#SeConnecter" prefHeight="28.0" prefWidth="95.0" style="-fx-background-color: #68270b;" styleClass="pink-btn" stylesheets="@../application/application.css" text="Se connecter">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label alignment="TOP_CENTER" layoutX="112.0" layoutY="340.0" prefHeight="30.0" prefWidth="104.0" text="Connexion" textAlignment="CENTER" textFill="#af0e1e">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
