@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PageModifyClient" prefHeight="358.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierClientsController">
+   <children>
+      <Pane prefHeight="34.0" prefWidth="600.0" style="-fx-background-color: #545453;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="2.0" prefHeight="27.0" prefWidth="161.0" text="Modifier un client" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="33.0" prefHeight="327.0" prefWidth="600.0" style="-fx-background-color: #D9D9D9;">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="17.0" layoutY="5.0" prefHeight="27.0" prefWidth="191.0" text="Désignation du client" textFill="#181818">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutX="17.0" layoutY="30.0" prefHeight="216.0" prefWidth="558.0" style="-fx-border-color: black;">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="13.0" prefHeight="27.0" prefWidth="91.0" text="ID" textFill="#181818">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="44.0" prefHeight="27.0" prefWidth="91.0" text="Nom" textFill="#181818">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="76.0" prefHeight="27.0" prefWidth="91.0" text="Prénom" textFill="#181818">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="109.0" prefHeight="27.0" prefWidth="91.0" text="Email" textFill="#181818">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="11.0" layoutY="143.0" prefHeight="27.0" prefWidth="91.0" text="Adresse" textFill="#181818">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="174.0" prefHeight="27.0" prefWidth="91.0" text="Mdp" textFill="#181818">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ModifyIdClient" layoutX="101.0" layoutY="14.0" />
+                  <TextField fx:id="ModifyNomClient" layoutX="102.0" layoutY="44.0" />
+                  <TextField fx:id="ModifyPrenomClient" layoutX="101.0" layoutY="75.0" prefHeight="26.0" prefWidth="149.0" />
+                  <TextField fx:id="ModifyMdpClient" layoutX="100.0" layoutY="175.0" />
+                  <TextField fx:id="ModifyEmailClient" layoutX="101.0" layoutY="110.0" prefHeight="26.0" prefWidth="422.0" />
+                  <TextField fx:id="ModifyAdresseClient" layoutX="101.0" layoutY="142.0" prefHeight="26.0" prefWidth="422.0" />
+               </children>
+            </Pane>
+            <Button fx:id="CancelModifyClient" layoutX="371.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#ButtonCancelModifyClient" prefHeight="27.0" prefWidth="86.0" styleClass="cancel-btn" stylesheets="@../application/application.css" text="Annuler">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="OkModifyClient" layoutX="489.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#ButtonOkModifyClient" prefHeight="27.0" prefWidth="86.0" styleClass="confirme-btn" stylesheets="@../application/application.css" text="Confirmer">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

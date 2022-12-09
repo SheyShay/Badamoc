@@ -1,0 +1,85 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.parent{
+	-fx-background-color: transparent;
+}
+
+.pane{
+	-fx-background-color: #4c000c;
+}
+
+.trans-btn-white-border{
+	-fx-background-color: transparent;
+	-fx-background-radius: 5px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 5px;
+	-fx-border-width: 1px;
+	-fx-text-fill: whitesmoke;
+}
+
+.white-pane{
+	-fx-background-image: url("/images/NEGOSUD.png") ;
+	-fx-background-size: 281 386;
+	-fx-background-position: center center;
+	-fx-border-color: #fff;
+}
+
+.pink-btn{
+	-fx-background-color: #C5304D;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+}
+
+.add-btn{
+	-fx-background-color: green;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+}
+
+.del-btn{
+	-fx-background-color: red;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+}
+
+.cancel-btn{
+	-fx-background-color: red;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+}
+
+.confirme-btn{
+	-fx-background-color: green;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+}
+
+/* --------------------------------- CONNECTION -------------------------------- */
+.connect-image{
+	-fx-background-image: url("/images/NEGOSUD.png") no-repeat no-repeat ;
+	-fx-background-size: 250 300;
+	-fx-background-position: center center;
+}
+
+/* --------------------------------- HOME -------------------------------------- */
+.home-image{
+	-fx-background-image: url("/images/NEGOSUD.png") ;
+	-fx-background-size: 250 300;
+	-fx-background-position: center center;
+	-fx-cursor: hand;
+}
+
+.home-box{
+	-fx-background-color: white;
+	-fx-background-radius: 25px;
+	-fx-border-color: grey;
+	-fx-border-radius: 25px;
+	-fx-border-size: 1px;
+	-fx-cursor: hand;
+}
+
+.home-titlebox{
+	-fx-background-color: #ffa901;
+	-fx-font-color: white;
+	-fx-background-radius: 25px;
+}
