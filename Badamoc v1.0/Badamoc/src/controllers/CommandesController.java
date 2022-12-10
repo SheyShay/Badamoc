@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -14,6 +15,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 public class CommandesController implements Initializable{
 
@@ -60,6 +62,38 @@ public class CommandesController implements Initializable{
     private AnchorPane CommandesPage;
     
     private Parent fxml;
+    
+    @FXML
+    void buttonAjouterCommande(MouseEvent event) {
+
+    }
+
+    @FXML
+    void buttonModifierCommande(MouseEvent event) {
+
+    }
+
+    @FXML
+    void buttonSupprimerCommande(MouseEvent event) {
+    	CommandesPage.getScene().getWindow();
+		Stage home = new Stage();
+		home.setResizable(false);
+    	try {
+    		fxml = FXMLLoader.load(getClass().getResource("/fxmlCommandes/SupprCommandes.fxml"));
+			Scene scene = new Scene(fxml);
+			home.setScene(scene);
+			home.show();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+
+    @FXML
+    void buttonVoirCommande(MouseEvent event) {
+
+    }
 
     @FXML
     void openClients(MouseEvent event) {

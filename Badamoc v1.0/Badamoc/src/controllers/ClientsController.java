@@ -89,7 +89,7 @@ public class ClientsController implements Initializable{
 		Stage home = new Stage();
 		home.setResizable(false);
     	try {
-    		fxml = FXMLLoader.load(getClass().getResource("/interfaces/AddClients.fxml"));
+    		fxml = FXMLLoader.load(getClass().getResource("/fxmlClients/AddClients.fxml"));
 			Scene scene = new Scene(fxml);
 			home.setScene(scene);
 			home.show();
@@ -106,7 +106,7 @@ public class ClientsController implements Initializable{
 		Stage home = new Stage();
 		home.setResizable(false);
     	try {
-    		fxml = FXMLLoader.load(getClass().getResource("/interfaces/SupprClients.fxml"));
+    		fxml = FXMLLoader.load(getClass().getResource("/fxmlClients/SupprClients.fxml"));
 			Scene scene = new Scene(fxml);
 			home.setScene(scene);
 			home.show();
@@ -123,7 +123,7 @@ public class ClientsController implements Initializable{
 		Stage home = new Stage();
 		home.setResizable(false);
     	try {
-    		fxml = FXMLLoader.load(getClass().getResource("/interfaces/ModifierClients.fxml"));
+    		fxml = FXMLLoader.load(getClass().getResource("/fxmlClients/ModifierClients.fxml"));
 			Scene scene = new Scene(fxml);
 			home.setScene(scene);
 			home.show();

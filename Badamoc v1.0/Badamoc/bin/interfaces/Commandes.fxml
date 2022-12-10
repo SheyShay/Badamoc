@@ -45,7 +45,7 @@
                      </font>
                   </TextField>
                   <Button layoutX="328.0" layoutY="36.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0" text="Q" />
-                  <Button layoutX="818.0" layoutY="37.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="86.0" styleClass="add-btn" stylesheets="@../application/application.css" text="Ajouter">
+                  <Button layoutX="818.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#buttonAjouterCommande" prefHeight="27.0" prefWidth="86.0" styleClass="add-btn" stylesheets="@../application/application.css" text="Ajouter">
                      <font>
                         <Font size="13.0" />
                      </font>
@@ -67,7 +67,7 @@
             </TableView>
             <Pane layoutY="560.0" prefHeight="56.0" prefWidth="942.0" style="-fx-background-color: #F3F3F3;">
                <children>
-                  <Button layoutX="580.0" layoutY="15.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="86.0" styleClass="add-btn" stylesheets="@../application/application.css" text="Ajouter">
+                  <Button layoutX="580.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#buttonVoirCommande" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: red; -fx-opacity: 0.5;" styleClass="add-btn" stylesheets="@../application/application.css" text="Voir">
                      <font>
                         <Font size="13.0" />
                      </font>
@@ -75,7 +75,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button layoutX="695.0" layoutY="15.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="86.0" styleClass="pink-btn" stylesheets="@../application/application.css" text="Modifier">
+                  <Button layoutX="695.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#buttonModifierCommande" prefHeight="27.0" prefWidth="86.0" styleClass="pink-btn" stylesheets="@../application/application.css" text="Modifier">
                      <font>
                         <Font size="13.0" />
                      </font>
@@ -83,7 +83,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button layoutX="809.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="86.0" styleClass="del-btn" stylesheets="@../application/application.css" text="Supprimer">
+                  <Button layoutX="809.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#buttonSupprimerCommande" prefHeight="27.0" prefWidth="86.0" styleClass="del-btn" stylesheets="@../application/application.css" text="Supprimer">
                      <font>
                         <Font size="13.0" />
                      </font>
